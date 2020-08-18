@@ -73,7 +73,7 @@ namespace SolarParams2
                 Input = 30.5,
                 Breaker = 60
             }
-        }
+        };
         public class Inverter
         {
             public string Make { get; set; }
