@@ -11,5 +11,46 @@ namespace SolarParams2
 {
     class LineDiagram
     {
+        private Element getLineDiagram(Document doc)
+        {
+            Element lineDiagram = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "Sunrise Template - Strings").FirstOrDefault();
+            return lineDiagram;
+        }
+
+        private List<Element> getConductorLabels(Document doc)
+        {
+            List<Element> conductorLabels = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "3").ToList();
+            return conductorLabels;
+        }
+
+        private Element getPvBreaker(Document doc)
+        {
+            Element pvBreaker = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "PV Breaker").FirstOrDefault();
+            return pvBreaker;
+        }
+
+        private Element getInverterLabel(Document doc)
+        {
+            Element inverterLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "sld inverter label").FirstOrDefault();
+            return inverterLabel;
+        }
+
+        private Element getMainServiceLabel(Document doc)
+        {
+            Element mainServiceLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "sld main panel").FirstOrDefault();
+            return mainServiceLabel;
+        }
+
+        private Element getMainBreakerLabel(Document doc)
+        {
+            Element mainBreakerLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "Main Breaker").FirstOrDefault();
+            return mainBreakerLabel;
+        }
+
+        private Element busbarRule(Document doc)
+        {
+            Element busbarRule = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "120_rule").FirstOrDefault();
+            return busbarRule;
+        }
     }
 }
