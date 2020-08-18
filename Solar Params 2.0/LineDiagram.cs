@@ -11,6 +11,7 @@ namespace SolarParams2
 {
     class LineDiagram
     {
+        // Filtered Element Collectors.
         private Element getLineDiagram(Document doc)
         {
             Element lineDiagram = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "Sunrise Template - Strings").FirstOrDefault();
@@ -51,6 +52,19 @@ namespace SolarParams2
         {
             Element busbarRule = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "120_rule").FirstOrDefault();
             return busbarRule;
+        }
+
+        // Methods for getting parameters.
+        private IList<Parameter> getOrderedLineDiagramParameters(Element lineDiagram)
+        {
+            IList<Parameter> orderedParameters = lineDiagram.GetOrderedParameters();
+            return orderedParameters;
+        }
+
+        private IList<Parameter> getOrderedConductorParameters(Element conductor)
+        {
+            IList<Parameter> orderedParameters = conductor.GetOrderedParameters();
+            return orderedParameters;
         }
     }
 }
