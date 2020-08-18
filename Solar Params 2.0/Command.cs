@@ -17,6 +17,16 @@ namespace SolarParams2
     {
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
+            // Get uiApp.
+            UIApplication uiApp = commandData.Application;
+
+            // Get UI document.
+            UIDocument uiDoc = uiApp.ActiveUIDocument;
+
+            // Get current document.
+            Document currentDoc = uiDoc.Document;
+
+
             return Result.Succeeded;
         }
     }
