@@ -1,0 +1,4 @@
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\bin\Debug\SolarParams2.dll
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\bin\Debug\SolarParams2.pdb
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2.dll
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2.pdb

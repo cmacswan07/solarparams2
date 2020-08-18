@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RevitAddIns>
+
+  <AddIn Type="Command">
+
+      <Name>SolarParams2</Name>
+
+      <FullClassName>SolarParams2.Command</FullClassName>
+
+      <Text>SolarParams2</Text> 
+
+      <Description>Manages important project parameters.</Description>
+
+      <VisibilityMode>AlwaysVisible</VisibilityMode>
+
+      <Assembly>./SolarParams2.dll</Assembly>
+
+      <AddInId>72799a9c-5f4c-418a-ac68-4ce6537019a2</AddInId>
+
+    <VendorId>ADSK</VendorId>
+
+    <VendorDescription>Autodesk, Inc, www.autodesk.com</VendorDescription>
+
+  </AddIn>
+
+</RevitAddIns>
