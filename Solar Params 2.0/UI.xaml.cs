@@ -26,18 +26,11 @@ namespace SolarParams2
         public UI(Document doc, Element lineDiagram)
         {
             InitializeComponent();
-            convertToOC(LineDiagram.getOrderedLineDiagramParameters(lineDiagram), paramList);
+            // paramList = LineDiagram.getOrderedLineDiagramParameters(lineDiagram).ToList<Parameter>();
+            paramList = LineDiagram.getOrderedLineDiagramParameters(lineDiagram).ToList<Parameter>();
+            myItemsControl.ItemsSource = paramList;
         }
 
-        private ObservableCollection<Parameter> paramList = new ObservableCollection<Parameter>();
-
-        private ObservableCollection<Parameter> convertToOC(IList<Parameter> lineDiagramParams, ObservableCollection<Parameter> oc)
-        {
-            foreach(Parameter param in lineDiagramParams)
-            {
-                oc.Add(param);
-            }
-            return oc;
-        }
+        private List<Parameter> paramList = new List<Parameter>();
     }
 }
