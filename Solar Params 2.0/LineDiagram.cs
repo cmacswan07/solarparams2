@@ -12,7 +12,7 @@ namespace SolarParams2
     class LineDiagram
     {
         // Filtered Element Collectors.
-        private Element getLineDiagram(Document doc)
+        public static Element getLineDiagram(Document doc)
         {
             Element lineDiagram = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "Sunrise Template - Strings").FirstOrDefault();
             return lineDiagram;
@@ -55,7 +55,7 @@ namespace SolarParams2
         }
 
         // Methods for getting parameters.
-        private IList<Parameter> getOrderedLineDiagramParameters(Element lineDiagram)
+        public static IList<Parameter> getOrderedLineDiagramParameters(Element lineDiagram)
         {
             IList<Parameter> orderedParameters = lineDiagram.GetOrderedParameters();
             return orderedParameters;

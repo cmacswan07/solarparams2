@@ -1,4 +1,10 @@
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\UI.g.cs
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2_MarkupCompile.cache
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2_MarkupCompile.lref
 C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\bin\Debug\SolarParams2.dll
 C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\bin\Debug\SolarParams2.pdb
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\UI.baml
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2.g.resources
 C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2.dll
 C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2.pdb
+C:\Users\cmacs\source\repos\Solar Params 2.0\Solar Params 2.0\obj\Debug\SolarParams2.csprojAssemblyReference.cache

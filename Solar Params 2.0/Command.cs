@@ -22,8 +22,14 @@ namespace SolarParams2
             UIDocument uiDoc = uiApp.ActiveUIDocument;
 
             // Get current document.
-            Document currentDoc = uiDoc.Document;
+            Document doc = uiDoc.Document;
 
+            // Get line diagram.
+            Element lineDiagram = LineDiagram.getLineDiagram(doc);
+
+            // UI init.
+            UI ui = new UI(doc, lineDiagram);
+            ui.ShowDialog();
 
             return Result.Succeeded;
         }
