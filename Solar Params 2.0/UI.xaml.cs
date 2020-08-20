@@ -32,11 +32,12 @@ namespace SolarParams2
 
             foreach(Parameter param in paramList)
             {
-                ParamControl paramControl = new ParamControl(param);
-                paramControlList.Add(paramControl);
+                if (!param.IsReadOnly)
+                {
+                    ParamControl paramControl = new ParamControl(param);
+                    paramControlList.Add(paramControl);
+                }
             }
-
-            Console.WriteLine("Blooper");
         }
 
         public static List<Parameter> paramList { get; set; }
