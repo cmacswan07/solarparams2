@@ -63,13 +63,9 @@
                 </TextBlock>
                 <ComboBox
                     ItemsSource="{Binding inverterList}"
+                    DisplayMemberPath="Model"
                     x:Name="inverterCombo"
                     Margin="0, 0, 0, 5">
-                    <ComboBox.ItemTemplate>
-                        <DataTemplate>
-                            <TextBlock Text="{Binding Path=Model}"></TextBlock>
-                        </DataTemplate>
-                    </ComboBox.ItemTemplate>
                 </ComboBox>
                 <TextBlock
                     Margin="0, 5, 5, 5"
