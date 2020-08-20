@@ -45,8 +45,6 @@ namespace SolarParams2
                     paramControlList.Add(paramControl);
                 }
             }
-
-
         }
 
         public static List<Parameter> paramList { get; set; }
@@ -63,8 +61,7 @@ namespace SolarParams2
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            Inverters.Inverter output = inverterCombo.SelectedItem as Inverters.Inverter;
-            Console.WriteLine("blah");
+            // Inverters.Inverter output = inverterCombo.SelectedItem as Inverters.Inverter;
             this.Close();
         }
     }

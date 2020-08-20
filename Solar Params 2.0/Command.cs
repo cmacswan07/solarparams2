@@ -13,6 +13,8 @@ namespace SolarParams2
     [Transaction(TransactionMode.Manual)]
     public class Command : IExternalCommand
     {
+        public static Boolean commitChanges = false;
+
         public Result Execute(ExternalCommandData commandData, ref string message, ElementSet elements)
         {
             // Get uiApp.

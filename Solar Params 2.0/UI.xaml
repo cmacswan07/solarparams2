@@ -64,6 +64,7 @@
                 <ComboBox
                     ItemsSource="{Binding inverterList}"
                     DisplayMemberPath="Model"
+                    SelectedIndex="2"
                     x:Name="inverterCombo"
                     Margin="0, 0, 0, 5">
                 </ComboBox>
@@ -73,7 +74,14 @@
                 </TextBlock>
                 <ComboBox 
                     x:Name="mainPanelCombo"
+                    SelectedIndex="1"
                     Margin="0, 0, 0, 5">
+                    <ComboBoxItem>225A</ComboBoxItem>
+                    <ComboBoxItem>200A</ComboBoxItem>
+                    <ComboBoxItem>175A</ComboBoxItem>
+                    <ComboBoxItem>150A</ComboBoxItem>
+                    <ComboBoxItem>125A</ComboBoxItem>
+                    <ComboBoxItem>100A</ComboBoxItem>
                 </ComboBox>
                 <TextBlock
                     Margin="0, 5, 5, 5"
@@ -81,7 +89,14 @@
                 </TextBlock>
                 <ComboBox 
                     x:Name="mainBreakerCombo"
+                    SelectedIndex="1"
                     Margin="0, 0, 0, 5">
+                    <ComboBoxItem>225A</ComboBoxItem>
+                    <ComboBoxItem>200A</ComboBoxItem>
+                    <ComboBoxItem>175A</ComboBoxItem>
+                    <ComboBoxItem>150A</ComboBoxItem>
+                    <ComboBoxItem>125A</ComboBoxItem>
+                    <ComboBoxItem>100A</ComboBoxItem>
                 </ComboBox>
                 <TextBlock
                     Margin="0, 5, 5, 5"
@@ -89,7 +104,10 @@
                 </TextBlock>
                 <ComboBox 
                     x:Name="newOrExistingCombo"
+                    SelectedIndex="0"
                     Margin="0, 0, 0, 5">
+                    <ComboBoxItem>Existing</ComboBoxItem>
+                    <ComboBoxItem>New</ComboBoxItem>
                 </ComboBox>
                 <Button
                     Margin="0, 25, 5, 5"
