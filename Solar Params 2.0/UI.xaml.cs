@@ -28,10 +28,20 @@ namespace SolarParams2
             InitializeComponent();
             this.DataContext = this;
             paramList = LineDiagram.getOrderedLineDiagramParameters(lineDiagram).ToList<Parameter>();
-            Console.WriteLine(myItemsControl);
+            paramControlList = new List<ParamControl>();
+
+            foreach(Parameter param in paramList)
+            {
+                ParamControl paramControl = new ParamControl(param);
+                paramControlList.Add(paramControl);
+            }
+
+            Console.WriteLine("Blooper");
         }
 
         public static List<Parameter> paramList { get; set; }
+
+        public static List<ParamControl> paramControlList { get; set; }
 
     }
 }

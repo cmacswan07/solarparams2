@@ -7,7 +7,7 @@ using Autodesk.Revit.DB;
 
 namespace SolarParams2
 {
-    class ParamControl
+    public class ParamControl
     {
         public ParamControl(Parameter param)
         {

@@ -37,17 +37,17 @@
                 Grid.Column="1" 
                 Grid.Row="2" 
                 x:Name="myItemsControl"
-                ItemsSource="{Binding paramList}">
+                ItemsSource="{Binding paramControlList}">
                 <ItemsControl.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Vertical">
                             <TextBlock
                                 Margin="0, 5, 5, 5"
-                                Text="{Binding Definition.Name}">
+                                Text="{Binding parameter.Definition.Name}">
                             </TextBlock>
                             <TextBox 
                                 Margin="0, 0, 0, 5"
-                                Text="{Binding AsValueString}"/>
+                                Text="{Binding Path=asValueString, Mode=OneWay}"/>
                         </StackPanel>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
