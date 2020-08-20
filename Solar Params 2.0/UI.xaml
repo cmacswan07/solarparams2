@@ -22,6 +22,7 @@
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
                 <RowDefinition Height="auto" />
+                <RowDefinition Height="auto" />
                 <RowDefinition Height="*" />
                 <RowDefinition Height="20" />
             </Grid.RowDefinitions>
@@ -52,17 +53,39 @@
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
             </ItemsControl>
-            <TextBlock
+            <StackPanel
                 Grid.Column="1"
                 Grid.Row="3"
-                Margin="0, 5, 5, 5"
-                Text="Inverter">
-            </TextBlock>
-            <ComboBox 
-                Grid.Column="1"
-                Grid.Row="4"
-                Margin="0, 0, 0, 5">
-            </ComboBox>
+                Orientation="Vertical">
+                <TextBlock
+                    Margin="0, 5, 5, 5"
+                    Text="Inverter">
+                </TextBlock>
+                <ComboBox 
+                    Margin="0, 0, 0, 5">
+                </ComboBox>
+                <TextBlock
+                    Margin="0, 5, 5, 5"
+                    Text="Main Panel">
+                </TextBlock>
+                <ComboBox 
+                    Margin="0, 0, 0, 5">
+                </ComboBox>
+                <TextBlock
+                    Margin="0, 5, 5, 5"
+                    Text="Main Breaker">
+                </TextBlock>
+                <ComboBox 
+                    Margin="0, 0, 0, 5">
+                </ComboBox>
+                <TextBlock
+                    Margin="0, 5, 5, 5"
+                    Text="New or Existing">
+                </TextBlock>
+                <ComboBox 
+                    Margin="0, 0, 0, 5">
+                </ComboBox>
+            </StackPanel>
         </Grid>
     </ScrollViewer>
 </Window>
