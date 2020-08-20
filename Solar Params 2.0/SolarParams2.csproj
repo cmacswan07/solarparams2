@@ -61,7 +61,6 @@
     <Compile Include="UI.xaml.cs">
       <DependentUpon>UI.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UIDataContext.cs" />
   </ItemGroup>
   <ItemGroup>
     <Page Include="UI.xaml">
