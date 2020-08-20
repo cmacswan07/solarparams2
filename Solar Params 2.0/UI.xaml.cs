@@ -33,27 +33,5 @@ namespace SolarParams2
 
         public static List<Parameter> paramList { get; set; }
 
-        private class ParamControl
-        {
-            public Parameter parameter { get; set; }
-
-            public string asValueString
-            {
-                get
-                {
-                    return parameter.AsValueString();
-                }
-            }
-
-            public void setIntParameter(int value)
-            {
-                parameter.Set(value);
-            }
-
-            public void setDoubleParameter(double value)
-            {
-                parameter.Set(value);
-            }
-        }
     }
 }
