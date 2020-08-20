@@ -14,7 +14,7 @@ namespace SolarParams2
             parameter = param;
         }
 
-        private Parameter parameter { get; set; }
+        public Parameter parameter { get; set; }
 
         public string asValueString
         {

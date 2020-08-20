@@ -43,7 +43,7 @@
                         <StackPanel Orientation="Vertical">
                             <TextBlock
                                 Margin="0, 5, 5, 5"
-                                Text="{Binding parameter.Definition.Name}">
+                                Text="{Binding Path=parameter.Definition.Name}">
                             </TextBlock>
                             <TextBox 
                                 Margin="0, 0, 0, 5"
