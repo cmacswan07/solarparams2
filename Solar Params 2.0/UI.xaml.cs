@@ -23,14 +23,14 @@ namespace SolarParams2
     /// </summary>
     public partial class UI : Window
     {
-        public UI(Document doc, Element lineDiagram)
+        public UI(Element lineDiagram)
         {
             InitializeComponent();
-            // paramList = LineDiagram.getOrderedLineDiagramParameters(lineDiagram).ToList<Parameter>();
+            this.DataContext = this;
             paramList = LineDiagram.getOrderedLineDiagramParameters(lineDiagram).ToList<Parameter>();
-            myItemsControl.ItemsSource = paramList;
+            Console.WriteLine(myItemsControl);
         }
 
-        private List<Parameter> paramList = new List<Parameter>();
+        public static List<Parameter> paramList { get; set; }
     }
 }
