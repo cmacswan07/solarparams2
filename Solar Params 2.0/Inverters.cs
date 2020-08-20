@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace SolarParams2
 {
-    class Inverters
+    public class Inverters
     {
+        public static Hashtable inverterTable = new Hashtable();
+
         public static List<Inverter> inverterList = new List<Inverter>()
         {
             new Inverter()

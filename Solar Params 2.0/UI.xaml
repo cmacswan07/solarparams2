@@ -61,14 +61,22 @@
                     Margin="0, 5, 5, 5"
                     Text="Inverter">
                 </TextBlock>
-                <ComboBox 
+                <ComboBox
+                    ItemsSource="{Binding inverterList}"
+                    x:Name="inverterCombo"
                     Margin="0, 0, 0, 5">
+                    <ComboBox.ItemTemplate>
+                        <DataTemplate>
+                            <TextBlock Text="{Binding Path=Model}"></TextBlock>
+                        </DataTemplate>
+                    </ComboBox.ItemTemplate>
                 </ComboBox>
                 <TextBlock
                     Margin="0, 5, 5, 5"
                     Text="Main Panel">
                 </TextBlock>
                 <ComboBox 
+                    x:Name="mainPanelCombo"
                     Margin="0, 0, 0, 5">
                 </ComboBox>
                 <TextBlock
@@ -76,6 +84,7 @@
                     Text="Main Breaker">
                 </TextBlock>
                 <ComboBox 
+                    x:Name="mainBreakerCombo"
                     Margin="0, 0, 0, 5">
                 </ComboBox>
                 <TextBlock
@@ -83,8 +92,14 @@
                     Text="New or Existing">
                 </TextBlock>
                 <ComboBox 
+                    x:Name="newOrExistingCombo"
                     Margin="0, 0, 0, 5">
                 </ComboBox>
+                <Button
+                    Margin="0, 25, 5, 5"
+                    Click="Button_Click"
+                    >Submit
+                </Button>
             </StackPanel>
         </Grid>
     </ScrollViewer>

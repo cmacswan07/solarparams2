@@ -25,9 +25,16 @@ namespace SolarParams2
     {
         public UI(Element lineDiagram)
         {
+            // Initialize component
             InitializeComponent();
+
+            // Set DataContext
             this.DataContext = this;
+
+            // Get ordered parameters from document line diagram.
             paramList = LineDiagram.getOrderedLineDiagramParameters(lineDiagram).ToList<Parameter>();
+
+            // Create a list of Parameter controls.
             paramControlList = new List<ParamControl>();
 
             foreach(Parameter param in paramList)
@@ -44,5 +51,17 @@ namespace SolarParams2
 
         public static List<ParamControl> paramControlList { get; set; }
 
+        public static List<Inverters.Inverter> inverterList
+        {
+            get
+            {
+                return Inverters.inverterList;
+            }
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
