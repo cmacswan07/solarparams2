@@ -59,6 +59,7 @@
     <Compile Include="LineDiagram.cs" />
     <Compile Include="ParamControl.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SetParams.cs" />
     <Compile Include="UI.xaml.cs">
       <DependentUpon>UI.xaml</DependentUpon>
     </Compile>

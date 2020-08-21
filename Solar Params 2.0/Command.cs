@@ -30,7 +30,7 @@ namespace SolarParams2
             Element lineDiagram = LineDiagram.getLineDiagram(doc);
 
             // UI init.
-            UI ui = new UI(lineDiagram);
+            UI ui = new UI(lineDiagram, doc);
             ui.ShowDialog();
 
             return Result.Succeeded;

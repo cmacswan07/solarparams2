@@ -12,6 +12,7 @@ namespace SolarParams2
         public ParamControl(Parameter param)
         {
             parameter = param;
+            newParamValue = param.AsValueString();
         }
 
         public Parameter parameter { get; set; }
@@ -33,6 +34,8 @@ namespace SolarParams2
         {
             parameter.Set(value);
         }
+
+        public string newParamValue { get; set; }
     }
 }
 

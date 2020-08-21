@@ -48,7 +48,7 @@
                             </TextBlock>
                             <TextBox 
                                 Margin="0, 0, 0, 5"
-                                Text="{Binding Path=asValueString, Mode=OneWay}"/>
+                                Text="{Binding Path=newParamValue, Mode=TwoWay}" />
                         </StackPanel>
                     </DataTemplate>
                 </ItemsControl.ItemTemplate>
@@ -74,14 +74,15 @@
                 </TextBlock>
                 <ComboBox 
                     x:Name="mainPanelCombo"
+                    SelectedValuePath="Tag"
                     SelectedIndex="1"
                     Margin="0, 0, 0, 5">
-                    <ComboBoxItem>225A</ComboBoxItem>
-                    <ComboBoxItem>200A</ComboBoxItem>
-                    <ComboBoxItem>175A</ComboBoxItem>
-                    <ComboBoxItem>150A</ComboBoxItem>
-                    <ComboBoxItem>125A</ComboBoxItem>
-                    <ComboBoxItem>100A</ComboBoxItem>
+                    <ComboBoxItem Tag="225">225A</ComboBoxItem>
+                    <ComboBoxItem Tag="200">200A</ComboBoxItem>
+                    <ComboBoxItem Tag="175">175A</ComboBoxItem>
+                    <ComboBoxItem Tag="150">150A</ComboBoxItem>
+                    <ComboBoxItem Tag="125">125A</ComboBoxItem>
+                    <ComboBoxItem Tag="100">100A</ComboBoxItem>
                 </ComboBox>
                 <TextBlock
                     Margin="0, 5, 5, 5"
@@ -89,14 +90,15 @@
                 </TextBlock>
                 <ComboBox 
                     x:Name="mainBreakerCombo"
+                    SelectedValuePath="Tag"
                     SelectedIndex="1"
                     Margin="0, 0, 0, 5">
-                    <ComboBoxItem>225A</ComboBoxItem>
-                    <ComboBoxItem>200A</ComboBoxItem>
-                    <ComboBoxItem>175A</ComboBoxItem>
-                    <ComboBoxItem>150A</ComboBoxItem>
-                    <ComboBoxItem>125A</ComboBoxItem>
-                    <ComboBoxItem>100A</ComboBoxItem>
+                    <ComboBoxItem Tag="225">225A</ComboBoxItem>
+                    <ComboBoxItem Tag="200">200A</ComboBoxItem>
+                    <ComboBoxItem Tag="175">175A</ComboBoxItem>
+                    <ComboBoxItem Tag="150">150A</ComboBoxItem>
+                    <ComboBoxItem Tag="125">125A</ComboBoxItem>
+                    <ComboBoxItem Tag="100">100A</ComboBoxItem>
                 </ComboBox>
                 <TextBlock
                     Margin="0, 5, 5, 5"
@@ -104,10 +106,11 @@
                 </TextBlock>
                 <ComboBox 
                     x:Name="newOrExistingCombo"
+                    SelectedValuePath="Tag"
                     SelectedIndex="0"
                     Margin="0, 0, 0, 5">
-                    <ComboBoxItem>Existing</ComboBoxItem>
-                    <ComboBoxItem>New</ComboBoxItem>
+                    <ComboBoxItem Tag="0">Existing</ComboBoxItem>
+                    <ComboBoxItem Tag="1">New</ComboBoxItem>
                 </ComboBox>
                 <Button
                     Margin="0, 25, 5, 5"

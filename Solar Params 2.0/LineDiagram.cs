@@ -18,7 +18,7 @@ namespace SolarParams2
             return lineDiagram;
         }
 
-        private List<Element> getConductorLabels(Document doc)
+        public static List<Element> getConductorLabels(Document doc)
         {
             List<Element> conductorLabels = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "3").ToList();
             return conductorLabels;
