@@ -36,6 +36,12 @@ namespace SolarParams2
             return inverterLabel;
         }
 
+        public static Element getAcDiscoLabel(Document doc)
+        {
+            Element acDiscoLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "sld ac disco label").FirstOrDefault();
+            return acDiscoLabel;
+        }
+
         public static Element getMainServiceLabel(Document doc)
         {
             Element mainServiceLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "sld main panel").FirstOrDefault();

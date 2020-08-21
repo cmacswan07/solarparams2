@@ -33,6 +33,24 @@ namespace SolarParams2
             UI ui = new UI(lineDiagram, doc);
             ui.ShowDialog();
 
+            if (commitChanges == true)
+            {
+                using(Transaction transaction = new Transaction(doc, "Modifying Parameters"))
+                {
+                    try
+                    {
+                        transaction.Start();
+                        SetParams.setParams();
+                        transaction.Commit();
+                    }
+                    catch(Exception e)
+                    {
+                        message = e.Message;
+                        return Result.Failed;
+                    }
+                }
+            }
+
             return Result.Succeeded;
         }
     }
