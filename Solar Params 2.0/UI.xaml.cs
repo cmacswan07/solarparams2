@@ -72,11 +72,11 @@ namespace SolarParams2
             SetParams.document = document;
             SetParams.paramControlList = paramControlList;
             SetParams.inverter = inverterCombo.SelectedItem as Inverters.Inverter;
-            // Main Panel
-            Console.WriteLine(mainPanelCombo.SelectedValue);
-            // Main Breaker
-            // New or Existing
+            SetParams.mainPanelValue = Convert.ToInt32(mainPanelCombo.SelectedValue);
+            SetParams.mainBreakerValue = Convert.ToInt32(mainPanelCombo.SelectedValue);
+            SetParams.newExistingValue = Convert.ToInt32(newOrExistingCombo.SelectedValue);
 
+            // Close dialog
             this.Close();
         }
     }

@@ -24,31 +24,31 @@ namespace SolarParams2
             return conductorLabels;
         }
 
-        private Element getPvBreaker(Document doc)
+        public static Element getPvBreaker(Document doc)
         {
             Element pvBreaker = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "PV Breaker").FirstOrDefault();
             return pvBreaker;
         }
 
-        private Element getInverterLabel(Document doc)
+        public static Element getInverterLabel(Document doc)
         {
             Element inverterLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "sld inverter label").FirstOrDefault();
             return inverterLabel;
         }
 
-        private Element getMainServiceLabel(Document doc)
+        public static Element getMainServiceLabel(Document doc)
         {
             Element mainServiceLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "sld main panel").FirstOrDefault();
             return mainServiceLabel;
         }
 
-        private Element getMainBreakerLabel(Document doc)
+        public static Element getMainBreakerLabel(Document doc)
         {
             Element mainBreakerLabel = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "Main Breaker").FirstOrDefault();
             return mainBreakerLabel;
         }
 
-        private Element busbarRule(Document doc)
+        public static Element getBusbarRule(Document doc)
         {
             Element busbarRule = new FilteredElementCollector(doc).OfClass(typeof(FamilyInstance)).Where(x => x.Name == "120_rule").FirstOrDefault();
             return busbarRule;
@@ -61,7 +61,7 @@ namespace SolarParams2
             return orderedParameters;
         }
 
-        private IList<Parameter> getOrderedConductorParameters(Element conductor)
+        public static IList<Parameter> getOrderedConductorParameters(Element conductor)
         {
             IList<Parameter> orderedParameters = conductor.GetOrderedParameters();
             return orderedParameters;
